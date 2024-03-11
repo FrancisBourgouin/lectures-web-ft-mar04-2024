@@ -1,0 +1,16 @@
+{
+  "name": "w2d1-test-party-time",
+  "version": "0.0.1",
+  "description": "Testing",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^9.2.2"
+  }
+}
