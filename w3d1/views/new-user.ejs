@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Information for new user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <%- include("./partials/_header") %>
+    <main>
+      <form method="POST" action="/users">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" placeholder="Enter your name" />
+        <label for="email">Enter your email</label>
+        <input type="text" name="email" placeholder="Enter your email" />
+        <label for="isAdmin">Check if you are an admin</label>
+        <input type="checkbox" name="isAdmin" id="isAdmin" />
+        <button>Add new user!</button>
+      </form>
+    </main>
+  </body>
+</html>

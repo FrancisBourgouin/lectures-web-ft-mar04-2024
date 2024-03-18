@@ -1,0 +1,15 @@
+{
+  "name": "w2d4-breakout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "async-is-a-lie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Information for all users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <%- include("./partials/_header") %>
+    <main>
+      <h1>Information for <%= users.length %> users:</h1>
+      <% for(const user of users){ %>
+      <ul>
+        <li>User name: <%= user.name %></li>
+        <li>User email: <%= user.email %></li>
+        <% if(user.isAdmin){ %>
+        <li>They are an admin</li>
+        <% } else { %>
+        <li>They are not an admin</li>
+        <% } %>
+        <li>
+          <a href="/users/<%= user.id %>">Visit this user</a>
+        </li>
+      </ul>
+      <% } %>
+    </main>
+  </body>
+</html>
