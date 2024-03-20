@@ -1,0 +1,24 @@
+<%- include('partials/_head.ejs') %>
+<section>
+	<h1>
+		<span>Super secret thief page !</span>
+	</h1>
+</section>
+<section>
+  <%- include("./partials/_error", {error} ) %>
+	<form action="/register" method="POST">
+    <label for="email">Enter the email</label>
+    <input type="email" name="email" placeholder="Enter the email" id="email">
+    <label for="name">Enter the name</label>
+    <input type="text" name="name" placeholder="Enter the name" id="name">
+    <label for="imagePath">Enter the image path</label>
+    <input type="text" name="imagePath" placeholder="Enter the image path" id="imagePath">
+    <label for="password">Enter the password</label>
+    <input type="password" name="password" placeholder="Enter the password" id="password">
+    <button>Create a vault for thief</button>
+  </form>
+</section>
+	
+</body>
+
+</html>

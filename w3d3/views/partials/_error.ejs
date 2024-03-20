@@ -1,0 +1,10 @@
+<% if(error){ %>
+<h1 style="color: red; font-size: 1em; background-color: lightpink; padding: 2em">
+  There is an error with the following field(s)
+  <ul>
+    <% for(const input of error){ %>
+    <li><%= input %></li>
+    <% } %>
+  </ul>
+</h1>
+<% } %>

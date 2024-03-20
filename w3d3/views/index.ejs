@@ -1,0 +1,31 @@
+<%- include('partials/_head.ejs') %>
+<section>
+	<h1>
+		<span>Super secret thief page !</span>
+	</h1>
+	<% if(user){ %>
+		<h2>
+			Welcome <%= user.name %>
+		</h2>
+	<% } %>
+</section>
+<section>
+	<main>
+		<div class="door">
+		</div>
+		<% if(user){ %>
+			<img src="<%= user.imagePath %>" alt="">
+		<% } %>
+		</main>
+		</section>
+	<section>
+		<% if(user){ %>
+			<a href="/logout">Log out from the vault</a>
+		<% } else { %>
+			<a href="/login">Log in into the vault</a>
+			<a href="/register">Register a new vault</a>
+		<% } %>
+	</section>
+	</body>
+
+	</html>
