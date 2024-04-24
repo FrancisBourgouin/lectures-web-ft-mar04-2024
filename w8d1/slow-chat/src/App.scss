@@ -1,0 +1,87 @@
+#root {
+  max-width: 1024px;
+  font-size:24px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Header{
+  padding:1em;
+  background-color:#555;
+}
+
+.MessageList{
+  padding:0;
+  padding-bottom:5em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1em;
+
+}
+
+.MessageListItem{
+  list-style-type: none;
+  padding:1em 2em;
+  border-radius: 0.25em;
+
+  &.self{
+    align-self: flex-end;
+  }
+
+  &.external{
+    align-self: flex-start;
+  }
+
+  &.server{
+    margin:1em;
+    font-size:0.7em;
+    letter-spacing: 1em;
+  }
+
+}
+
+.MessageForm{
+  display: flex;
+  gap:1em;
+  justify-content: center;
+  position:fixed;
+  bottom:0;
+  padding:1em 0;
+  width:1024px;
+
+  input, button{
+    font-size:1em;
+    border:none;
+    box-shadow: none;;
+    padding:1em 2em;
+    border-radius: 0.25em;
+  }
+
+  input{
+    width:100%;
+  }
+}
+.UserForm{
+  display: flex;
+  gap:1em;
+  margin:2em;
+  justify-content: center;
+
+  select, button{
+    font-size:1em;
+    border:none;
+    box-shadow: none;;
+    padding:1em 2em;
+    border-radius: 0.25em;
+  }
+
+  input{
+    width:100%;
+  }
+}
